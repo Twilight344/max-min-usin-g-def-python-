@@ -1,0 +1,38 @@
+#Find the largest/smallest number in a list/tuple using functions max_num() and min_num(). 
+def maxlist(list1):
+    max = list1[0]
+    
+    
+    for i in list1:
+        if i>max:
+            max=i
+        
+    return max
+def minlist(list1):
+    min = list1[0]
+
+    for i in list1:
+        if i<min:
+            min=i
+    return min 
+
+
+list1=[]
+n=int(input('enter the number of numbers you want to input '))
+for i in range(0,n):
+    ele= int(input())
+    list1.append(ele)
+    print(list1)
+
+print("Largest element is:", maxlist(list1),"Smallest element is:",minlist(list1)) 
+        
+    
+        
+        
+
+        
+        
+
+
+    
+    
